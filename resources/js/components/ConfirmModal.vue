@@ -1,6 +1,6 @@
 <template>
-  <div class="modal" @click.prevent.stop="">
-    <div class="modal-inner" :class="field.modalClasses.splice(' ')">
+  <div class="nova-button-modal" @click.prevent.stop="">
+    <div class="nova-button-modal-inner" :class="field.modalClasses.splice(' ')">
       <transition name="fade">
         <form class="rounded-lg shadow-lg overflow-hidden" style="width: 460px">
           <div class="p-8">
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style>
-.modal {
+.nova-button-modal {
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -55,7 +55,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-inner {
+.nova-button-modal-inner {
   position: absolute;
   background-color: #fff;
   opacity: 1;
